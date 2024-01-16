@@ -11,8 +11,8 @@ const App = ({temp, condition}) => {
     divStyle.color = "red";
   }
   return (
-    <div style={divStyle}>
-        <p>Tempreature: {temp}</p>
+    <div>
+        <p><span style={divStyle}>Temperature: {temp}</span></p>
         <p>Condition: {condition}</p>
     </div>
   )
