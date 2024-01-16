@@ -4,4 +4,4 @@ import App from "./components/App";
 
 
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App temp="25" condition="Sunny"/>, document.getElementById("root"));

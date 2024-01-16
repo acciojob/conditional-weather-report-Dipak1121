@@ -2,10 +2,19 @@
 import React from "react";
 import './../styles/App.css';
 
-const App = () => {
+const App = ({temp, condition}) => {
+  let divStyle = {
+    color: "white",
+    backgroundColor: "blue"
+  }
+
+  if(temp > 20){
+    divStyle.backgroundColor = "red";
+  }
   return (
-    <div>
-        {/* Do not remove the main div */}
+    <div style={divStyle}>
+        <h1>Tempreature: {temp}</h1>
+        <h1>Condition: {condition}</h1>
     </div>
   )
 }
